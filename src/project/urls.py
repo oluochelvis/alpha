@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from project.boards import views
+
 urlpatterns = [
+    url(r'^$', views.boards_home, name='boards_home'),
     url(r'^admin/', admin.site.urls),
 ]
