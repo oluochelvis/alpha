@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import UpdateView
 
-from .forms import SignUpForm
+from .forms import SignUpForm, UserInformationUpdateForm
 
 # Create your views here.
 def signup(request):
